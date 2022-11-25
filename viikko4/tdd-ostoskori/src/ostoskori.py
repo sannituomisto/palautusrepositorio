@@ -9,11 +9,14 @@ class Ostoskori:
         return len(self._ostokset)
 
     def hinta(self):
-        return 0
-        # kertoo korissa olevien ostosten yhteenlasketun hinnan
+        summa=0
+        for ostos in self._ostokset:
+            summa += Ostos(ostos).hinta()
+        return summa
 
     def lisaa_tuote(self, lisattava: Tuote):
         self._ostokset.append(Ostos(lisattava))
+
 
     def poista_tuote(self, poistettava: Tuote):
         # poistaa tuotteen
