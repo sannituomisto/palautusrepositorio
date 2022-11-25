@@ -29,7 +29,7 @@ class Ostoskori:
     def ostokset(self):
         ostokset=[]
         for ostos in self._ostoskori:
-            ostokset.append(ostos)
+            ostokset.append(f"{Ostos(ostos.tuote).tuotteen_nimi()} {Ostos(ostos.tuote).lukumaara()} kpl")
         return ostokset
 
         # palauttaa listan jossa on korissa olevat ostos-oliot
