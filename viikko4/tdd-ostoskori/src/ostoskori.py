@@ -4,10 +4,12 @@ from ostos import Ostos
 class Ostoskori:
     def __init__(self):
         self._ostoskori = []
-        self._tavarat=0
 
     def tavaroita_korissa(self):
-        return self._tavarat
+        lkm = 0
+        for tuote in self._ostoskori:
+            lkm += tuote.lukumaara()
+        return lkm
 
     def hinta(self):
         summa=0
@@ -18,15 +20,12 @@ class Ostoskori:
     def lisaa_tuote(self, lisattava: Tuote):
         if self.tavaroita_korissa() == 0:
             self._ostoskori.append(Ostos(lisattava))
-            self._tavarat += 1
             return
         for ostos in self._ostoskori:
             if Ostos(lisattava).tuotteen_nimi() == ostos.tuotteen_nimi():
                 ostos.muuta_lukumaaraa(1)
-                self._tavarat += 1
                 return
         self._ostoskori.append(Ostos(lisattava))
-        self._tavarat += 1
 
 
 
@@ -36,7 +35,6 @@ class Ostoskori:
         for ostos in self._ostoskori:
             if Ostos(poistettava).tuotteen_nimi() == ostos.tuotteen_nimi():
                 ostos.muuta_lukumaaraa(-1)
-                self._tavarat -= 1
                 if self.tavaroita_korissa() == 0:
                     self._ostoskori.remove(ostos)
                 return
