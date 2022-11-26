@@ -3,7 +3,7 @@ on piirtää johonkin alustalle ympyrä, joka jaetaan 5 osa-alueeseen: start, st
 more of ja less of. Näihin kirjataan asioita otsikon mukaan eli start-alueelle tulee uusia asioita, 
 joita ei aiemmin olla tehty, stop-alueelle asioita, joiden tekeminen on järkevää lopettaa, continue-alueelle  
 asiat, jotka on hyviä ja joiden tekemistä jatketaan ja viimeiset kaksi aluetta asioille, joita jatkossa tulee 
-tehdä enemmän/vähemmän. Retrospektiivi tulisi viedä 10 minuuttia pienemmissä ryhmissä ja 25 minuuuttia isommissa ryhmissä.
+tehdä enemmän/vähemmän. Retrospektiivin tulisi viedä 10 minuuttia pienemmissä ryhmissä ja 25 minuuuttia isommissa ryhmissä.
 
 Glad, Sad, Mad-tekniikan tarkoituksena on listata sprintin aikana tulleita ongelmia, muutoksia 
 ja huomioita ja sen jälkeen kategorioida ne Glad, Sad ja Mad- otsikoiden alle. Otsikot edustavat 
