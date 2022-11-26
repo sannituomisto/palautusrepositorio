@@ -4,9 +4,10 @@ from ostos import Ostos
 class Ostoskori:
     def __init__(self):
         self._ostoskori = []
+        self._tavarat=0
 
     def tavaroita_korissa(self):
-        return len(self._ostoskori)
+        return self._tavarat
 
     def hinta(self):
         summa=0
@@ -15,7 +16,18 @@ class Ostoskori:
         return summa
 
     def lisaa_tuote(self, lisattava: Tuote):
+        if self.tavaroita_korissa() == 0:
+            self._ostoskori.append(Ostos(lisattava))
+            self._tavarat += 1
+            return
+        for ostos in self._ostoskori:
+            if Ostos(lisattava).tuotteen_nimi() == ostos.tuotteen_nimi():
+                ostos.muuta_lukumaaraa(1)
+                self._tavarat += 1
+                return
         self._ostoskori.append(Ostos(lisattava))
+        self._tavarat += 1
+
 
 
     def poista_tuote(self, poistettava: Tuote):
@@ -29,7 +41,7 @@ class Ostoskori:
     def ostokset(self):
         ostokset=[]
         for ostos in self._ostoskori:
-            ostokset.append(f"{Ostos(ostos.tuote).tuotteen_nimi()} {Ostos(ostos.tuote).lukumaara()} kpl")
+            ostokset.append(f"{ostos.tuotteen_nimi()} {ostos.lukumaara()} kpl")
         return ostokset
 
         # palauttaa listan jossa on korissa olevat ostos-oliot
