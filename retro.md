@@ -1,5 +1,5 @@
 Start, Stop, Continue, More of, Less of Wheel- tekniikan tarkoituksena 
-on piirtää johonkin alustalle ympyrä, joka jaetaan 5 alueeseen: start, stop, continue, 
+on piirtää johonkin alustalle ympyrä, joka jaetaan 5 osa-alueeseen: start, stop, continue, 
 more of ja less of. Näihin kirjataan asioita otsikon mukaan eli start-alueelle tulee uusia asioita, 
 joita ei aiemmin olla tehty, stop-alueelle asioita, joiden tekeminen on järkevää lopettaa, continue-alueelle  
 asiat, jotka on hyviä ja joiden tekemistä jatketaan ja viimeiset kaksi aluetta asioille, joita jatkossa tulee 
