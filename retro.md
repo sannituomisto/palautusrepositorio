@@ -6,7 +6,7 @@ asiat, jotka on hyviä ja joiden tekemistä jatketaan ja viimeiset kaksi aluetta
 tehdä enemmän/vähemmän. Retrospektiivin tulisi viedä 10 minuuttia pienemmissä ryhmissä ja 25 minuuuttia isommissa ryhmissä.
 
 Glad, Sad, Mad-tekniikan tarkoituksena on listata sprintin aikana tulleita ongelmia, muutoksia 
-ja huomioita ja sen jälkeen kategorioida ne Glad, Sad ja Mad- otsikoiden alle. Otsikot edustavat 
+ja huomioita ja sen jälkeen kategorioida ne Glad, Sad ja Mad-otsikoiden alle. Otsikot edustavat 
 positiivisia ja negatiivisia  huomautuksia sprintistä/tiimistä sekä työtä haittaavia laajempia tai 
 ei-toimintatapohin liittyviä ongelmia. Sen jälkeen tiimin jäsenet äänestävät, mistä huomautuksista pitäisi 
 puhua ja huomautukset käydään läpi järjestyksessä aloittaen eniten ääniä saaneesta huomautuksesta. Aikaa on tarkoitus 
