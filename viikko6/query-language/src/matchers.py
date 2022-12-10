@@ -41,7 +41,6 @@ class All:
     def test(self, player):
         return player
 
-
 class Not:
     def __init__(self, cond):
         self._cond=cond
